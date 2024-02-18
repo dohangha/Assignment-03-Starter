@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/laptop.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="./css/font.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assignment 3</title>
+</head>
+<body>
+<!------------------- banner ------------------------>
+<div id= "banner" class="p-5 text-center bg-image rounded-3" style="background-image: url('./images/banner.jpg');height: 400px;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Đỗ Thị Hằng Hà</h1>
+        <p class="mb-3">Full Stack Developer</p>
+      </div>
+    </div>
+</div>
+<!------------------- navbar ------------------------>
+<!-------------------<div id="navbar" class="text-center">
+    <div class="row justify-content-md-center ">
+        <div class="p-3 col col-md-2" >
+            <a href="#info"><i class="icon-user"></i>THÔNG TIN</a>
+        </div>
+        <div class="p-3 col col-md-2" >
+            <a href="#profile"><i class="icon-doc-text-inv"></i>LÝ LỊCH</a>
+        </div>
+        <div class="p-3 col col-md-1" >
+            <img src="./images/avatar.jpg" alt="profile image">
+        </div>
+        <div class="p-3 col col-md-2" >
+            <a href="#cert"><i class="icon-mail-alt"></i>CHỨNG CHỈ</a>
+        </div>
+        <div class="p-3 col col-md-2" style="border-right: 1px solid rgb(90, 90, 90)">
+            <a href="#project"><i class="icon-star-1"></i>DỰ ÁN</a>
+        </div>
+    </div>
+</div> ------------------------>
+<div id="nav-bar">
+    <div class="container">
+        <div id="menu">
+            <ul>
+                <li><a href="#info"><i class="icon-user"></i>THÔNG TIN</a></li>
+                <li><a href="#profile"><i class="icon-doc-text-inv"></i>LÝ LỊCH</a></li>
+                <div class="li-di">
+                    <img src="./images/avatar.jpg" alt="profile image">
+                </div>
+                <li ><a href="#cert"><i class="icon-mail-alt"></i>CHỨNG CHỈ</a></li>
+                <li><a href="#project"><i class="icon-star-1"></i>DỰ ÁN</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!------------------- about + personal info  ------------------------>
+<div id="about">
+    <div class="row">
+        <div class="col-md-6 p-5 bg-light">
+            <div class="p-3" id="target">
+				<h1 class="section-title1">Mục tiêu nghề nghiệp</h1>
+				<p>
+					Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+					Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+					trí <b>Fullstack Developer</b>, có thể vận dụng những kiến
+					thức đã được trau dồi và không ngừng học hỏi để phát triển
+					bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+				</p>
+			</div>
+        </div>
+        <div class="col-md-6 p-5" style="background-color: rgb(212, 212, 212);">
+            <div class="p-3" id="personal-info">
+				<h1 class="section-title1">Thông tin cá nhân</h1>
+                <div class="col-md-12">
+                    <h1>Login</h1>
+                    <input type="text" id="password"  class="form-control" placeholder="Enter email">
+                    <p> Hãy nhập email của bạn</p>
+                    <input id="button" type="button" class="btn btn-info" value="Submit">
+                </div> 
+                <div id="HIDDENDIV" class="hidden">
+                    <ul class="mt-40 info">
+                        <li><span>Giới tính</span> : Nữ</li>
+                        <li><span>Ngày sinh</span> : 19/05/2000</li>
+                        <li><span>Điện thoại</span> : (+84) 912398899</li>
+                        <li><span>Email</span> : hadthFX15921@funix.edu.vn</li>
+                        <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
+                        <li><span>Website</span> : <a href="https://hadohang.com" target="_blank">https://hadohang.com</a></li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-gplus"></i></a>
+                        <a href="#"><i class="icon-linkedin"></i></a>
+                    </div>
+                </div>
+			</div>
+        </div>
+      </div>
+</div>
+<!------------------- job info ------------------------>
+<div id="job-info">
+    <div class="p-5 row justify-content-md-center">
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-5 col-sm-10">
+            <div class="p-3 card">
+				<div class="card-wrapper">
+                    <h1>Kinh nghiệm  </h1>
+                    <i class="ic-toolbox"></i>
+                </div>
+                <div class="card-body">
+                    <button id="collapseButton1" type="button" class="btn" data-toggle="collapse" data-target="#collapsible1" onclick="changeName()">VIEW MORE</button>
+                     <div id="collapsible1" class="collapse mt-4">
+                            <ul>
+                                <li>
+                                    <h3> Full Stack Developer - Công ty Hoa Ban</h3>
+                                    <p><i>05/2023 </i>- <span class="current"><i>Hiện tại</i>  </span></p>
+                                    <p>- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.</p>
+                                    <p>- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL, SQLServer, NoSQL, ...) và viết được các câu truy vấn.</p>
+                                    <p>- Sử dụng ngôn ngữ server-side (Python, Java, ...) để xây dựng các Web Server.</p>
+                                </li>
+                                <li>
+                                    <h3>Web Designer - Công ty Hoa Đỏ</h3> 
+                                    <p><i>06/2022 - 04/2023</i></p>
+                                    <p>Web Designer. </p>
+                                    <p>- Thiết kế Website dự trên yêu cầu của khách hàng. </p>
+                                    <p>- Sử dụng các công cụ: Figma, Canva, PTS</p>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-5 col-sm-10">
+            <div class="p-3 card">
+				<div class="card-wrapper">
+                    <h1>Học vấn </h1>
+                    <i class="ic-pencil"></i>
+				</div>
+                <div class="card-body">
+                    <button id="collapseButton2" type="button" class="btn" data-toggle="collapse" data-target="#collapsible2" onclick="changeName()">VIEW MORE</button>
+                     <div id="collapsible2" class="collapse mt-4">
+                        <ul>
+                            <li>
+                                <h3>Funix</h3>
+                                <p><i>06/2021 - 05/2022</i></p>
+                                <p>- Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack. </p>
+                                <p>- GPA: 9 / 10 </p>
+                            </li>
+                            <li>
+                                <h3>Cử nhân - ĐH FPT</h3>
+                                <p><i>08/2016 - 07/2019</i></p>
+                                <p>- Chuyên ngành: Kỹ thuật phần mềm. </p>
+                                <p>- GPA: 3.3 / 4 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-5 col-sm-10">
+            <div class="p-3 card">
+				<div class="card-wrapper">
+                    <h1>Hoạt động </h1>
+                    <i class="ic-toolbox"></i>
+				</div>
+                <div class="card-body">
+                    <button id="collapseButton3" type="button" class="btn" data-toggle="collapse" data-target="#collapsible3" onclick="changeName()">VIEW MORE</button>
+                     <div id="collapsible3" class="collapse mt-4">
+                        <ul>
+                            <li>
+                                <h3>FPT Edu Hackathon 2021</h3>
+                                <p>- Giải 3 bảng B.</p>
+                                <p>- Đề tài: Trang web về phân loại rác thải.</p>
+                            </li>
+                            <li>
+                                <h3>Câu lạc bộ Hoa Hướng Dương</h3>
+                                <p><i>08/2019 - 08/2020</i></p>
+                                <p>- Trưởng ban chuyên môn</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-5 col-sm-10">
+            <div class="p-3 card">
+                <div class="card-wrapper">
+                    <h1>Sở thích </h1>
+                    <i class="ic-telescope"></i>
+                </div>
+                <div class="card-body">
+                    <button id="collapseButton4" type="button" class="btn" data-toggle="collapse" data-target="#collapsible4" onclick="changeName()">VIEW MORE</button>
+                     <div id="collapsible4" class="collapse mt-4">
+                        <div class="hobby">
+                            <div ><i class="ic-telescope"></i></div>
+                            <p>Âm nhạc</p>
+                        </div>
+                        <div class="hobby">
+                            <div ><i class="ic-strategy"></i></div>
+                            <p>Chơi game</p>
+                        </div>
+                        <div class="hobby">
+                            <div ><i class="ic-hotairballoon"></i></div>
+                            <p>Du lịch</p>
+                        </div>
+                        <div class="hobby">
+                            <div ><i class="ic-basket"></i></div>
+                            <p>Nấu ăn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-5 col-sm-10">
+            <div class="p-3 card">
+                <div class="card-wrapper">
+                    <h1>Ngôn ngữ </h1>
+                    <i class="ic-mic"></i>
+                </div>
+                <div class="card-body">
+                     <button id="collapseButton5" type="button" class="btn" data-toggle="collapse" data-target="#collapsible5" onclick="changeName()">VIEW MORE</button>
+                     <div id="collapsible5" class="collapse mt-4">
+                        <p> Tiếng Anh - IELTS 7.5</p>
+                        <div class="skillbar">
+                            <div class="language eng"></div>
+                            <div class="language eng1"></div>
+                            <div class="language eng2"></div>
+                        </div>
+                        <p> Tiếng Nhật - JLPT N4</p>
+                        <div class="skillbar">
+                            <div class="language jp"></div>
+                            <div class="language jp1"></div>
+                            <div class="language jp2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-5 col-sm-10">
+            <div class="p-3 card">
+                <div class="card-wrapper">
+                    <h1>Kỹ năng </h1>
+                    <i class="ic-tools-2"></i>
+                </div>
+                <div class="card-body">
+                    <button id="collapseButton6" type="button" class="btn" data-toggle="collapse" data-target="#collapsible6" onclick="changeName()">VIEW MORE</button>
+                     <div id="collapsible6" class="collapse mt-4">
+                        <p>HTML/CSS: Fundamental</p>
+                        <div class="skillbar">
+                            <div class="language html"></div>
+                            <div class="language html1"></div>
+                            <div class="language html2"></div>
+                        </div>
+                        <p>Javascript: Intermediate</p>
+                        <div class="skillbar">
+                            <div class="language java"></div>
+                            <div class="language java1"></div>
+                            <div class="language java2"></div>
+                        </div>
+                        <p>NodeJS: Intermediate</p>
+                        <div class="skillbar">
+                            <div class="language node"></div>
+                            <div class="language node1"></div>
+                            <div class="language node2"></div>
+                        </div>
+                        <p>Bootstrap 5: Fundamental</p>
+                        <div class="skillbar">
+                            <div class="language bt"></div>
+                            <div class="language bt1"></div>
+                            <div class="language bt2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+      </div>       
+</div>
+<!------------------- certificate------------------------>
+<div id="certificate" class="col-md-12 p-5">
+    <h1 class="section-title1 pb-5">Chứng chỉ - Giải thưởng</h1>
+    <div class="row row1" >
+        <div class="col-md-6 mb-5 column1">
+            <div class="col">
+                <img src="./images/Cert_WEB.png">
+            </div>
+            <div class="col" >
+                <table class="table">
+                    <tr>
+                        <th>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</th>
+                    </tr>
+                    <tr>
+                        <td>- Chứng chỉ thuộc chương trình CCDN</td>
+                    </tr>
+                    <tr>
+                        <td>- GPA: 8.9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6 mb-5 column2">
+            <div class="col">
+                <img src="./images/Cert_WEB.png">
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr>
+                        <th>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</th>
+                    </tr>
+                    <tr>
+                        <td>- Chứng chỉ thuộc chương trình CCDN</td>
+                    </tr>
+                    <tr>
+                        <td>- GPA: 8.9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 py-5">
+            <div class="col">
+                <img src="./images/Cert_WEB.png">
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr>
+                        <th>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</th>
+                    </tr>
+                    <tr>
+                        <td>- Chứng chỉ thuộc chương trình CCDN</td>
+                    </tr>
+                    <tr>
+                        <td>- GPA: 8.9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------- project------------------------>
+<div id="project">
+    <div class="p-5 row justify-content-md-center">
+        <h1 class="pb-5 section-title">
+            Dự án
+        </h1>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-4 col-sm-12">
+            <div class="p-3 card">
+                <img src="./images/project1.png">
+				<div class="pt-3"><h2><a href="https://dohangha.github.io/Digital-CV-Asm-3/" target="_blank" style="text-decoration: none">WEBSITE CÁ NHÂN</a></h2></div>
+				<div class="row intro">
+					<div class="col-md-4">
+                        <p class="year text-center"> 2023</p>
+                    </div>
+                    <div class="col">
+                    </div>
+					<div class="col-md-6">
+                        <p><i class="icon-user-1"></i> Funix</p>
+                        <p><i class="icon-lamp"></i> Developer</p>
+                    </div>
+				</div>
+                <table>
+					<tr>
+						<td style="vertical-align: text-top;">Mô tả: </td>
+						<td>Trang Web cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+					</tr>
+					<tr>
+						<td>Nhiệm vụ: </td>
+						<td>Phát triển, tối ưu code và xử lý lỗi.</td>
+					</tr>
+					<tr>
+						<td>Công nghệ: </td>
+						<td>HTML, CSS.</td>
+					</tr>
+				</table>
+            </div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-4 col-sm-12">
+            <div class="p-3 card">
+                <img src="./images/project2.png">
+				<div class="pt-3"><h2><a href="https://dohangha.github.io/Digital-CV-Asm-3/" target="_blank" style="text-decoration: none">TRACKING PERFORMANCE REPORT</a></h2></div>
+				<div class="row intro">
+					<div class="col-md-4">
+                        <p class="year text-center"> 2023</p>
+                    </div>
+                    <div class="col">
+                    </div>
+					<div class="col-md-6">
+                        <p><i class="icon-user-1"></i> Funix</p>
+                        <p><i class="icon-lamp"></i> Developer</p>
+                    </div>
+				</div>
+                <table>
+                    <tr>
+                        <td style="vertical-align: text-top;">Mô tả: </td>
+                        <td>Trang script giúp theo dõi hiệu suất làm việc của nhân viên</td>
+                    </tr>
+                    <tr>
+                        <td>Nhiệm vụ: </td>
+                        <td>Phát triển, tối ưu code và xử lý lỗi.</td>
+                    </tr>
+                    <tr>
+                        <td>Công nghệ: </td>
+                        <td>HTML, CSS.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="pb-5 col-lg-4 col-xl-4 col-xxl-4 col-md-4 col-sm-12">
+            <div class="p-3 card">
+                <img src="./images/project3.png">
+				<div class="pt-3"><h2><a href="https://dohangha.github.io/Digital-CV-Asm-3/" target="_blank" style="text-decoration: none">WEBSITE DURIAN</a></h2></div>
+				<div class="row intro">
+					<div class="col-md-4">
+                        <p class="year text-center"> 2023</p>
+                    </div>
+                    <div class="col">
+                    </div>
+					<div class="col-md-6">
+                        <p><i class="icon-user-1"></i> Funix</p>
+                        <p><i class="icon-lamp"></i> Developer</p>
+                    </div>
+				</div>
+                <table>
+                    <tr>
+                        <td style="vertical-align: text-top;">Mô tả: </td>
+                        <td>Trang Web giới thiệu công ty chuyên về sầu riêng</td>
+                    </tr>
+                    <tr><td>Nhiệm vụ: </td>
+                        <td>Phát triển, tối ưu code và xử lý lỗi.</td>
+                    </tr>
+                    <tr>
+                        <td>Công nghệ: </td>
+                        <td>HTML, CSS.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------- footer------------------------>
+<div id="footer" class="bg-grey">
+    <div class="container d-flex justify-content-center align-items-center">
+        <ul class="row">
+            <li class="col-sm-3 d-flex"><i class="icon-facebook-circled"></i><a href="https://www.facebook.com/hoangmymy122" target="_blank">Facebook</a></li>
+            <li class="col-sm-3 d-flex"><i class="icon-linkedin-circled"></i><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+            <li class="col-sm-3 d-flex"><i class="icon-github-circled"></i><a href="https://github.com/dohangha" target="_blank">Github</a></li>
+        </ul>
+    </div>
+</div>
+<!--------Javacript------------->
+<script>
+    // Get references to the elements you'll be working with
+var input = document.getElementById("password");
+var div = document.getElementById("HIDDENDIV");
+var btn = document.getElementById("button");
+
+// Set up event handlers in JavaScript
+button.addEventListener("click", validate);
+
+function validate(){
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (input.value.match(validRegex)) { 
+     // No need to add a "show" class. Just remove the "hidden" class.
+     div.classList.remove('hidden');
+     
+     // Or, add it:
+     input.classList.add("hidden");
+  } else {  
+     password.focus(); // <-- If you don't do this first, your select code won't work
+     password.setSelectionRange(0, password.value.length);   
+     alert('Invalid Password!'); 
+  }
+}
+
+function changeName(){
+    if($("#collapseButton1, #collapseButton2, #collapseButton3, #collapseButton4, #collapseButton5, #collapseButton6").html()=="VIEW MORE"){
+        $("#collapseButton1, #collapseButton2, #collapseButton3, #collapseButton4, #collapseButton5, #collapseButton6").html("VIEW LESS");
+    }
+    else{
+        $("#collapseButton1, #collapseButton2, #collapseButton3, #collapseButton4, #collapseButton5, #collapseButton6").html("VIEW MORE");
+    }
+}
+    </script>
+</body>
+</html>

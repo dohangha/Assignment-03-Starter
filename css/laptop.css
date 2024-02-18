@@ -1,0 +1,269 @@
+* {
+  margin: 0px;
+}
+/* banner */
+
+.top-intro{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* navbar */
+/*#navbar div{
+  border-right-style: solid;
+  border-width: 0.5px ;
+  border-color: rgb(153, 152, 152);
+}
+
+#navbar div:nth-child(1){
+  border-left-style: solid;
+  border-width: 0.5px ;
+  border-color: rgb(153, 152, 152);
+}
+
+#navbar div:nth-child(2){
+  border-right-style: none;
+}
+
+#navbar div:nth-child(3){
+  border-right-style: none;
+}
+
+#navbar div:nth-child(3){
+  position: relative;
+}
+
+#navbar a{
+  text-decoration: none;;
+}
+
+#navbar img{
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  right: 0px;
+  left: 0px;
+  top: -16px;
+  border-radius: 50%;
+  border: 4px solid rgb(233, 230, 230);
+  margin: 0 auto;
+  z-index: 9;
+}
+*/
+
+#nav-bar .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 60px;
+  grid-auto-flow: column;
+  place-content: center;
+}
+
+#menu ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  place-content: center;
+}
+
+#menu ul li {
+  display: grid;
+  place-content: center;
+  border-left-style: solid;
+  border-width: 0.5px ;
+  border-color: rgb(59, 59, 59);
+  height: 60px;
+}
+
+#menu ul li:last-child {
+  border-right-style: solid;
+  border-width: 0.5px ;
+  border-color: rgb(59, 59, 59);
+}
+
+#menu ul li:nth-child(4){
+border-left-style: none;
+}
+
+#menu ul li a {
+  color: rgb(59, 59, 59);
+  display: flex;
+  padding: 0 2vw;
+  text-decoration: none;
+}
+
+#menu ul li i{
+color: #2196F3;
+}
+
+ul .li-di{
+padding-left: 100px;
+padding-right: 100px;
+position: relative;
+}
+
+ul .li-di img{
+position: absolute;
+width: 100px;
+height: 100px;
+right: 0px;
+left: 0px;
+top: -15px;
+border-radius: 50%;
+border: 4px solid rgb(233, 230, 230);
+margin: 0 auto;
+z-index: 9;
+}
+
+/* about */
+#about .hidden{
+  display: none;
+}
+
+/* job info */
+#job-info .card-body{
+  visibility: hidden;
+}
+#job-info .card:hover .card-body{
+  visibility: visible;
+  animation: fade-in 1s;
+}
+
+#job-info .card-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+#job-info .card-wrapper i{
+  font-size: 30px;
+}
+
+#job-info button{
+  background-color: #e2e188;
+  border-radius: 20px;
+}
+
+.current{
+  border: 1px solid #2196F3;
+  background-color: #2196F3;
+  border-radius: 15px;
+  padding: 2px 10px;
+  color: white
+}
+
+.hobby{
+display: inline-block;
+text-align: center;
+}
+.hobby div{
+display: flex;
+width: 52px;
+height: 52px;
+margin: 4px;
+text-align: center;
+align-items: center;
+justify-content: center;
+border-style: solid;
+border: 3px solid #21f33d;
+border-radius: 50%;
+}
+
+#job-info .hobby i{
+font-size: 25px;
+color:rgb(59, 59, 59);
+}
+
+
+/*ngon ngu */
+.skillbar {
+width: 100%;
+display: grid;
+grid-template-columns: 30% 30% 30%; 
+grid-template-rows: 5px 5px 5px;
+gap: 10px;
+}
+
+.language {
+text-align: right;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 20px;
+}
+
+.eng, .eng1 {width: 100%; background-color: #2196F3;}
+.eng2 {width: 100%; background-color: #d0d3d2;}
+.jp {width: 100%; background-color: #2196F3;}
+.jp1, .jp2 {width: 100%; background-color: #d0d3d2;}
+
+/*ky nang */
+.html {width: 100%; background-color: #2196F3;}
+.html1, .html2 {width: 100%; background-color: #d0d3d2;}
+.java, .java1 {width: 100%; background-color: #2196F3;}
+.java2 {width: 100%; background-color: #d0d3d2;}
+.node, .node1 {width: 100%; background-color: #2196F3;}
+.node2 {width: 100%; background-color: #d0d3d2;}
+.bt {width: 100%; background-color: #2196F3;}
+.bt1, .bt2 {width: 100%; background-color: #d0d3d2;}
+/*cert*/
+
+#certificate img{
+  width: 250px;
+}
+
+#certificate {
+  background-color: rgb(237, 237, 238);
+}
+
+#certificate .col-md-6{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+#certificate td{
+  border: none;
+}
+#certificate th{
+  border: none;
+}
+.column1{
+  border-right: solid 1px #d6c08d;
+}
+#certificate .row1{
+  border-bottom: solid 1px #d6c08d;
+}
+
+/*project*/
+#project .year{
+  border: 1px solid #2196F3;
+  background-color: #2196F3;
+  border-radius: 15px;
+  padding: 2px 10px;
+  color: white
+}
+
+/*footer*/
+#footer {
+  background-color: rgb(237, 237, 238);
+}
+#footer .container ul{
+  gap: 0px;
+}
+
+#footer .container ul li{
+  list-style: none;
+}
+
+#footer .container ul li i{
+  color: #2196F3;
+}
+
+#footer a{
+  text-decoration: none;
+}
+
+#footer .col-sm-3{
+  padding: 30px;
+}
